@@ -3,6 +3,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.header {
+    display: flex;
+    border: 5px;
+    margin: 10px;
+
+}
 h1{
     text-align: center;
 }
