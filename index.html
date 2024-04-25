@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaC-Movies</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3f608588f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <nav class="navegacion">
-            <a class="contenedorLogo" href="#">
-                <span>CAC-Movies</span>
+            <a class="anclaLogo" href="#" class="animate__animated animate__animated">
+            <i class="fas fa-film" aria-hidden="true" ></i>
+            <span>CAC-Movies</span>
             </a>
 
             <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
-                <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
-                <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
+            <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
+            <li class="listaItem"><a class="linkNav" href="registrarse.html">Registrarse</a></li>
+            <li class="listaItem"><a class="linkNav iniciarSesion" href="#">Iniciar Sesión</a></li>
             </ul>
         </nav>
-    </header>
+    </header> 
 
-    <main id="main" class="main">
+    <main class="main">
         <section data-aos="zoom-in"  data-aos-duration="1000" class="sectionPrincipal"> <!--primera sección-->
             <h1 class="tituloPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
             <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
-            <button><a class="botonRegistrarse" href="registrarse.html"> Registrate </a></button>
+            <a class="botonRegistrarse" href="registrarse.html"> Registrate </a>
         </section>
         <section class="buscadorPrincipal"> <!--buscador-->
             <h2 class="tituloSection">¿Qué estas buscando para ver?</h2>
@@ -35,28 +39,40 @@
             </form>
         </section>
         <hr>
-        <section id="Tendencias" class="peliculasTendencia">
+        <section  class="peliculasTendencia" id="tendencias">
             <h3 class="tituloSection">Las tendencias de hoy</h3>
-            <div class="peliculasContenedor"> <!-- Carga de las películas tendencia -->
-            <div><img src="img/peli_1.jpg" alt="peliculas tendencias 1"></div>
-            <div><img src="img/peli_10.jpg" alt="peliculas tendencias 2"></div>
-            <div><img src="img/peli_11.jpg" alt="peliculas tendencias 3"></div>
-            <div><img src="img/peli_4.jpg" alt="peliculas tendencias 4"></div>
-            </div>
+            <div class="contenedorTendencias"> <!-- Carga de las películas tendencia -->
+
+            <div class="itemTendencias"><img src="img/peli_1.jpg" alt="peliculas tendencias 1"></div>
+            <div class="itemTendencias"><img src="img/peli_10.jpg" alt="peliculas tendencias 2"></div>
+            <div class="itemTendencias"><img src="img/peli_11.jpg" alt="peliculas tendencias 3"></div>
+            <div class="itemTendencias"><img src="img/peli_4.jpg" alt="peliculas tendencias 4"></div>
+            <div class="itemTendencias"><img src="img/peli_12.jpg" alt="peliculas tendencias"></div>
+            <div class="itemTendencias"><img src="img/peli_13.jpg" alt="peliculas tendencias"></div>
+            <div class="itemTendencias"><img src="img/peli_14.jpg" alt="peliculas tendencias"></div>
+            <div class="itemTendencias"><img src="img/peli_15.jpg" alt="peliculas tendencias"></div>
+            <div class="itemTendencias"><img src="img/peli_16.jpg" alt="peliculas tendencias"></div>
+            <div class="itemTendencias"><img src="img/peli_17.jpg" alt="peliculas tendencias"></div>
+        </div>
             <button class="boton anterior">Anterior</button>  
             <button class="boton siguiente">Siguiente</button>
         </section>
         <hr>
         <section class="peliculasAclamadas">
-            <h3 class="tituloSection">Las más aclamadas</h3>
-            <div class="aclamadas" id="aclamadasContainer"> <!-- Carga de las películas más aclamadas -->
-            <div><img src="img/aclamada_1.jpg" alt="pelicula aclamada 1"></div>
-            <div><img src="img/aclamada_2.jpg" alt="pelicula aclamada 2"></div>
-            <div><img src="img/aclamada_3.jpg" alt="pelicula aclamada 3"></div>
-            <div><img src="img/aclamada_5.jpg" alt="pelicula aclamada 4"></div>
-            <div><img src="img/aclamada_10.jpg" alt="pelicula aclamada 5"></div>
-            <div><img src="img/aclamada_11.jpg" alt="pelicula aclamada 6"></div>
-            </div>
+            <h2 class="tituloSection">Las más aclamadas</h2>
+            <div class="aclamadasContenedor" > <!-- Carga de las películas más aclamadas -->
+            <div class="itemAclamadas"><img src="img/aclamada_1.jpg" alt="pelicula aclamada 1"></div>
+            <div class="itemAclamadas" ><img src="img/aclamada_2.jpg" alt="pelicula aclamada 2"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_3.jpg" alt="pelicula aclamada 3"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_5.jpg" alt="pelicula aclamada 4"></div>
+            <div class="itemAclamadas" ><img src="img/aclamada_10.jpg" alt="pelicula aclamada 5"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_11.jpg" alt="pelicula aclamada 6"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_12.jpg" alt="pelicula aclamada"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_9.jpg" alt="pelicula aclamada"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_8.jpg" alt="pelicula aclamada"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_4.jpg" alt="pelicula aclamada"></div>
+            <div class="itemAclamadas"><img src="img/aclamada_7.jpg" alt="pelicula aclamada"></div>
+        </div>
         </section>
     </main>
     <footer class="footer">
