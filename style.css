@@ -184,10 +184,17 @@ align-items: center;
 .itemTendencias img{
     object-fit: cover;
     border-radius:30px;
-    box-shadow: 30 60px 40px rgb(0 0 0 / 8%);
-    border-radius: 20px;
+    border:solid ;
+    border-color:rgb(37, 36, 36);
     height: 50vh; 
+
 }
+.efectoTendencia:hover {-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;}
+
+
 
 /*seccion peliculas aclamadas*/
 .peliculasAclamadas{
@@ -224,12 +231,11 @@ align-items: center;
     height: 50vh; 
     }
 
-.flechaArriba{
-display: flex; 
-align-items: end;
-flex-direction: row-reverse;
+    .imagen:hover {filter: blur(5px);}
 
-}
+/*footer*/
 footer{
     background: #9f3647;
+    display: flex;
+    align-items: flex-end;
 }
