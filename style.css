@@ -130,9 +130,9 @@ margin: 35px 10px;
 border-radius: 20px;
 border-width: 3px;
 border-style: solid;
-border-color: white
-border-image: #181419;
+border-bottom: #181419;
 padding: 0.5rem;
+width: 8rem;
 }
 
 
