@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaC-Movies</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3f608588f.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+
     <header class="header">
         <nav class="navegacion">
             <div class="animate__animated animate__swing"><a  class="anclaLogo" href="#" >
@@ -21,7 +23,8 @@
             <ul class="listaNav">
             <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
             <li class="listaItem"><a class="linkNav" href="registrarse.html">Registrarse</a></li>
-            <li class="listaItem"><a class="linkNav iniciarSesion" href="#">Iniciar Sesión</a></li>
+            <li class="listaItem"><a class="linkNav" href="inicioSesion.html">Iniciar Sesión</a></li>
+            <li class="listaItem"><a class="linkNav" href="api.html">Api</a></li>
             </ul>
         </nav>
     </header> 
@@ -54,10 +57,10 @@
             <div class="itemTendencias"><img class="efectoTendencia" src="img/peli_15.jpg" alt="peliculas tendencias"></div>
             <div class="itemTendencias"><img class="efectoTendencia" src="img/peli_16.jpg" alt="peliculas tendencias"></div>
             <div class="itemTendencias"><img class="efectoTendencia" src="img/peli_17.jpg" alt="peliculas tendencias"></div>
-        </div>
-            <button class="boton anterior">Anterior</button>  
-            <button class="boton siguiente">Siguiente</button>
         </section>
+        <div class="contenedorBotones"><button class="botonDeslizador">Anterior</button>  
+            <button class="botonDeslizador">Siguiente</button>
+        </div>
         <hr>
         <section class="peliculasAclamadas">
             <h2 class="tituloSection">Las más aclamadas</h2>
@@ -85,9 +88,9 @@
                 <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
             </ul>
         </nav>
-        <a href="#main" class="flechaArriba">
-            <img src="img/flecha-hacia-arriba (1).png" alt="ir arriba flecha">
-        </a>
+        <div class="flecha">
+            <a href="#tendencias"><img src="img/flecha-hacia-arriba (1).png" alt="ir arriba flecha"></a>
+        </div>
     </footer>
 
 </body>

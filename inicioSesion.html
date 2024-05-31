@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CaC-Movies/inicio sesion</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+        <link rel="stylesheet" href="css/registroInicio.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a3f608588f.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bodyRegistrarse">
+        <main>
+            <header class="headerRegistrarse">
+                
+                    <a  class="anclaLogo" href="index.html" >
+                    <i class="fas fa-film" aria-hidden="true" ></i>
+                    <span >CAC-Movies</span>
+                    </a>
+            </header>
+            <section>
+                <form action="" method="get">
+                    <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+                    <div>
+                        <input type="usuario" placeholder="Usuario" id="usuario" name="usuario">
+                        <div class="error-text"></div>
+                      
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Contraseña" id="password" name="password">
+                        <div class="error-text"></div>
+                    </div>
+                    <div>
+                        <input class="boton" id="botonLogin" type="submit" value="Iniciar Sesión">
+                    </div>
+                    <div>
+                        <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+
+        <script src="./js/inicio.js"></script>
+    </body>

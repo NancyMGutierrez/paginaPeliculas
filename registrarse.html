@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/registroInicio.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+   
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">IG logo</a>
-            <!--<ul>
-                <li><a href="#">Activate</a></li>
-                <li><a href="registrarse.html">Registrarse</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-            </ul>-->
-        </nav>
-
-    </header>
+    <header class="headerRegistrarse">
+        <a  class="anclaLogo" href="index.html" >
+        <i class="fas fa-film" aria-hidden="true"></i>
+        <span >CAC-Movies</span>
+        </a>
+</header>
     
 <main id="main" class="main">
     <section class="seccionRegistrarse">
         <form action="" method="get">
             <h2 class="tituloRegistrarse">Registro</h2>
             <div>
-                <input type="text" placeholder="Nombre"  id="nombre" name="nombre">
+                <input type="text" placeholder="Nombre"  id="nombre" name="nombre" >
                 <div class="error-text"></div>
             </div>
             <div>
@@ -36,7 +34,7 @@
                 <div class="error-text"></div>
             </div>
             <div>
-                <input type="password" placeholder="Contraseña"  id="password" name="password">
+                <input type="password" placeholder="Contraseña"  id="pass" name="password">
                 <div class="error-text"></div>
             </div>
             <div>
@@ -57,7 +55,9 @@
                     <option value="UY">Uruguay</option>
                     <option value="VE">Venezuela</option>
                 </select>
-                <div class="error-text"></div>
+                <div class="error-text">
+                    
+                </div>
             </div>
             <div class="terminos">
                 <input class="check" type="checkbox" id="terminos">
@@ -65,27 +65,18 @@
                 <div class="error-text"></div>
             </div>
             <div>
-                <input class="boton" type="submit" value="Registrarse">
+                <input class="boton" id="botonLogin" type="submit" value="Registrarse">
             </div>
             <div>
                 <a class="ayuda" href="#">Necesitas ayuda?</a>
             </div>
+            <div> <a id="ayuda" class="ayuda" href="inicioSesion.html">¿Ya tienes una cuenta? Haz click</a></div>
         </form>
     </section>
 </main>
 
-<footer class="footer">
-    <nav class="navegacion">
-        <ul class="listaNav">
-            <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
-            <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
-            <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
-            <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
-        </ul>
-    </nav>
-    <a href="#main" class="flechaArriba">
-        <img src="img/flecha-hacia-arriba (1).png" alt="ir arriba flecha">
-    </a>
-</footer>
+<footer></footer>
+
+<script src="/js/registrarse.js"></script>
 </body>
 </html>
