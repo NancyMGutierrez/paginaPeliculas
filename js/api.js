@@ -16,9 +16,14 @@ getCharacters((data) => {
 
             <div class="image_container">
                 <img class= "cards_api" src="${personaje.image}" alt="Personaje">
-            </div>
+               
+               
+            </div class="tittle-container">
+            <div> <h2 class="data_personaje" >${personaje.name}</h2></div>
+            
 
-            <h2 class="data_personaje" >${personaje.name}</h2>
+
+            
             <h4 class="status">${personaje.status}</h4>
 
         </article>
